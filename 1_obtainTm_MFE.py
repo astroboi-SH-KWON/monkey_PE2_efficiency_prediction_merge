@@ -7,6 +7,10 @@ from Bio.Seq import Seq
 
 
 sTIME_STAMP = '%s'          % (time.ctime().replace(' ', '-').replace(':', '_'))
+############### start to set env ###############
+WORK_DIR = os.getcwd() + "/"
+INPUT_FILE = ""
+############### end setting env ################
 
 class cFeatures:
     def __init__(self):
@@ -58,14 +62,17 @@ def main():
     nRTLenPt3       = 14 # Can be longer according to insert size
 
     ## Input ##
-    sINPUT_DIR      = '/home/hkim'
+    # sINPUT_DIR      = '/home/hkim'
+    sINPUT_DIR = WORK_DIR
+    # sInputFile      = '%s/Tm_MFE_example.txt' % sINPUT_DIR
     sInputFile      = '%s/Tm_MFE_example.txt' % sINPUT_DIR
     list_sTarSeqs   = load_input_data (sInputFile)
     ############
 
     ## Output ##
-    sOUTPUT_DIR     = '/home/hkim/test'
-    os.makedirs(sOUTPUT_DIR, exist_ok=True)
+    # sOUTPUT_DIR     = '/home/hkim/test'
+    sOUTPUT_DIR     = WORK_DIR + "out_1_obtainTm_MFE"
+    os.makedirs(sOUTPUT_DIR , exist_ok=True)
     sOutFile1       = '%s/formodeling.output.pt1.csv' % sOUTPUT_DIR
     sOutFile2       = '%s/formodeling.output.pt2.csv' % sOUTPUT_DIR
     sOutFile3       = '%s/formodeling.output.pt3.csv' % sOUTPUT_DIR
