@@ -1,9 +1,10 @@
-#!/home/hkim/anaconda3/bin/python3
+#!/home/hkim/anaconda2/envs/tf_1/bin/python
 
 import os, sys, pickle, time, subprocess, json, re, regex, random
 from Bio.SeqUtils import MeltingTemp as mt
 from Bio.SeqUtils import GC as gc
 from Bio.Seq import Seq
+import time
 
 
 sTIME_STAMP = '%s'          % (time.ctime().replace(' ', '-').replace(':', '_'))
@@ -422,6 +423,8 @@ def make_output (dict_cFeat, sOutFile, nNickIndex, sPart):
 
 
 if __name__ == '__main__':
+    start_time = time.time()
+    print("start 1_obtainTm_MFE.py >>>>>>>>>>>>>>>>>>")
     if len(sys.argv) == 1:
         main()
     else:
@@ -431,6 +434,8 @@ if __name__ == '__main__':
             locals()[function_name](*function_parameters)
         else:
             sys.exit('ERROR: function_name=%s, parameters=%s' % (function_name, function_parameters))
+
+    print("1_obtainTm_MFE.py : %.2f seconds ::::::::::::::" % (time.time() - start_time))
     # if END: len(sys.argv)
 # if END: __name__    sInFile        = '%s/input/matplot_data.txt' % sDATA_DIR
 

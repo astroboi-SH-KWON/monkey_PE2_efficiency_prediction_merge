@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc978cbe-00bc-4bb7-9b41-d754bc1269eb" name="Default Changelist" comment="" />
+    <list default="true" id="fc978cbe-00bc-4bb7-9b41-d754bc1269eb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/monkey_PE2_efficiency_prediction_merge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/monkey_PE2_efficiency_prediction_merge.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_obtainTm_MFE.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_obtainTm_MFE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepCas9/DeepCas9_example_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DeepCas9/DeepCas9_example_input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepCas9/RANK_final_DeepCas9_Final.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepCas9/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeepCas9/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepPE/DeepPE_example_output.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepPE/MainTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeepPE/MainTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Util.py" beforeDir="false" afterPath="$PROJECT_DIR$/Util.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,25 +44,107 @@
   <component name="ProjectId" id="1efWmlGRnoW0qCHajFODA0nouvb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+  <component name="RunManager" selected="Python.Test (1)">
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="monkey_PE2_efficiency_prediction_merge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MainTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="monkey_PE2_efficiency_prediction_merge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DeepPE" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DeepPE/MainTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="monkey_PE2_efficiency_prediction_merge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DeepCas9" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DeepCas9/Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="monkey_PE2_efficiency_prediction_merge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <item itemvalue="Python.Test (1)" />
+        <item itemvalue="Python.Test" />
+        <item itemvalue="Python.MainTest" />
+        <item itemvalue="Python.Main" />
       </list>
-    </option>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -50,14 +163,90 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="2245" y="348" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594713548433">
       <screen x="1982" y="-414" width="1018" height="1920" />
     </state>
     <state x="2245" y="348" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1856.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1594713548433" />
-    <state x="1991" y="187" key="SettingsEditor" timestamp="1594713784459">
-      <screen x="1982" y="-414" width="1018" height="1920" />
+    <state x="463" y="394" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595209910943">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="463" y="394" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1595209910943" />
+    <state x="2189" y="225" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595209335611" />
+    <state x="2238" y="219" key="FileChooserDialogImpl" timestamp="1595229994524">
+      <screen x="1920" y="-465" width="1080" height="1890" />
+    </state>
+    <state x="547" y="391" key="FileChooserDialogImpl/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1594981561232" />
+    <state x="2238" y="219" key="FileChooserDialogImpl/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595229994524" />
+    <state x="2238" y="200" key="FileChooserDialogImpl/0.0.1858.1080/1920.-485.1080.1890@1920.-485.1080.1890" timestamp="1594889383328" />
+    <state width="1035" height="576" key="GridCell.Tab.0.bottom" timestamp="1595228779649">
+      <screen x="1920" y="-465" width="1080" height="1890" />
+    </state>
+    <state width="1835" height="216" key="GridCell.Tab.0.bottom/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1595210069510" />
+    <state width="1035" height="576" key="GridCell.Tab.0.bottom/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595228779649" />
+    <state width="1035" height="576" key="GridCell.Tab.0.center" timestamp="1595228779649">
+      <screen x="1920" y="-465" width="1080" height="1890" />
+    </state>
+    <state width="1835" height="216" key="GridCell.Tab.0.center/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1595210069510" />
+    <state width="1035" height="576" key="GridCell.Tab.0.center/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595228779649" />
+    <state width="1035" height="576" key="GridCell.Tab.0.left" timestamp="1595228779649">
+      <screen x="1920" y="-465" width="1080" height="1890" />
+    </state>
+    <state width="1835" height="216" key="GridCell.Tab.0.left/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1595210069510" />
+    <state width="1035" height="576" key="GridCell.Tab.0.left/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595228779649" />
+    <state width="1035" height="576" key="GridCell.Tab.0.right" timestamp="1595228779649">
+      <screen x="1920" y="-465" width="1080" height="1890" />
+    </state>
+    <state width="1835" height="216" key="GridCell.Tab.0.right/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1595210069510" />
+    <state width="1035" height="576" key="GridCell.Tab.0.right/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595228779649" />
+    <state width="1035" height="687" key="GridCell.Tab.1.bottom" timestamp="1595225779923">
+      <screen x="1920" y="-465" width="1080" height="1890" />
+    </state>
+    <state width="1035" height="687" key="GridCell.Tab.1.bottom/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595225779923" />
+    <state width="1035" height="687" key="GridCell.Tab.1.center" timestamp="1595225779923">
+      <screen x="1920" y="-465" width="1080" height="1890" />
+    </state>
+    <state width="1035" height="687" key="GridCell.Tab.1.center/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595225779923" />
+    <state width="1035" height="687" key="GridCell.Tab.1.left" timestamp="1595225779923">
+      <screen x="1920" y="-465" width="1080" height="1890" />
+    </state>
+    <state width="1035" height="687" key="GridCell.Tab.1.left/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595225779923" />
+    <state width="1035" height="687" key="GridCell.Tab.1.right" timestamp="1595225779923">
+      <screen x="1920" y="-465" width="1080" height="1890" />
+    </state>
+    <state width="1035" height="687" key="GridCell.Tab.1.right/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595225779923" />
+    <state x="1930" y="127" key="SettingsEditor" timestamp="1595209247088">
+      <screen x="1920" y="-465" width="1080" height="1890" />
     </state>
     <state x="1991" y="187" key="SettingsEditor/0.0.1856.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1594713784459" />
+    <state x="1930" y="127" key="SettingsEditor/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595209247088" />
+    <state x="1930" y="107" key="SettingsEditor/0.0.1858.1080/1920.-485.1080.1890@1920.-485.1080.1890" timestamp="1594886384326" />
+    <state x="967" y="0" width="853" height="1167" key="dock-window-1" timestamp="1595208963560">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="967" y="0" width="853" height="1167" key="dock-window-1/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595208963560" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DeepCas9/Test.py</url>
+          <line>182</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

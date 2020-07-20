@@ -156,6 +156,7 @@ def getseq(filenum):
             seq.append(data[l])
     #loop end: l
     FILE.close()
+
     processed_full_seq = preprocess_seq(seq)
 
     return processed_full_seq, seq

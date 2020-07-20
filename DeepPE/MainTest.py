@@ -4,7 +4,7 @@ import tensorflow as tf
 import numpy as np
 from numpy import *
 import xlsxwriter
-import pyexcel as pe
+# import pyexcel as pe
 from random import shuffle
 ##############################################################################
 
@@ -98,9 +98,8 @@ def Model_Inference(sess, TEST_X, model, args, load_episode, test_data_num, test
         TEST_Z[i*test_batch:(i+1)*test_batch] = sess.run([model.outputs], feed_dict=Dict)[0]
 
     testval_row = 0
-    testval_col = 3
+    testval_col = 22  # 3
     sheet_index = 0
-
     for test_value in (TEST_Z):
         testvalsheet[sheet_index].write(testval_row, testval_col, test_value[0])
         testval_row += 1
@@ -187,7 +186,12 @@ for TEST_NUM_index in range(len(TEST_NUM_SET)):
     for index_X in range(np.shape(pre_X)[0]):
         testsheet[-1][-1].write(test_row, 0, pre_X[index_X])
         testsheet[-1][-1].write(test_row, 1, pre_mod_X[index_X])
-        testsheet[-1][-1].write(test_row, 2, repr(bio[index_X]))
+        col_num = 2
+        for tmp_val in bio[index_X]:
+            testsheet[-1][-1].write(test_row, col_num, tmp_val)
+            col_num += 1
+
+        # testsheet[-1][-1].write(test_row, 2, repr(bio[index_X]))
         test_row += 1
 
 for best_model_path in best_model_path_list:

@@ -8,6 +8,7 @@ WORK_DIR = os.getcwd() + "/"
 INPUT_DIR = "input/crab_eating_deep_pe_input/"
 # INPUT_DIR = "input/marmoset_deep_pe_input/"
 OUTPUT = "output/"
+TOP_N = 1000
 ############### end setting env ################
 
 
@@ -36,8 +37,8 @@ def make_excel_to_csv():
 
 
 if __name__ == '__main__':
-    start_time = time.time()
+    start_time = time.perf_counter()
     print("start >>>>>>>>>>>>>>>>>>")
     main()
     # make_excel_to_csv()
-    print("::::::::::: %.2f seconds ::::::::::::::" % (time.time() - start_time))
+    print("::::::::::: %.2f seconds ::::::::::::::" % (time.perf_counter() - start_time))
