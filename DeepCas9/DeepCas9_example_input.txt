@@ -1,4 +1,20 @@
-Wide target sequence (47)	Prime edited sequence	PBS length	RT length	PBS-RT length	Tm1(PBS)	Tm 2(target DNA region corresponding to RT template)	Tm 3(reverse transcribed cDNA and PAM-opposite DNA strand)	Tm 4(RT template region and reverse transcribed cDNA)	deltaTm(Tm3-Tm2)	GC count_1(PBS)	GC count_2(RT)	GC count_3(PBS-RT)	GC contents_1(PBS)	GC contents_2(RT)	GC contents_3(PBS-RT)	MFE_1(pegRNA)	MFE_2(-spacer)	MFE_3(RT-PBS-PolyT)	MFE_4(spacer only)	MFE_5(Spacer+Scaffold)	DeepSpCas9 score
+Wide target sequence (47)	Prime edited sequence	PBS length	RT length	PBS-RT length	"Tm1
+(PBS)"	"Tm 2
+(target DNA region corresponding to RT template)"	"Tm 3
+(reverse transcribed cDNA and PAM-opposite DNA strand)"	"Tm 4
+(RT template region and reverse transcribed cDNA)"	"deltaTm
+(Tm3-Tm2)"	"GC count_1
+(PBS)"	"GC count_2
+(RT)"	"GC count_3
+(PBS-RT)"	"GC contents_1
+(PBS)"	"GC contents_2
+(RT)"	"GC contents_3
+(PBS-RT)"	"MFE_1
+(pegRNA)"	"MFE_2
+(-spacer)"	"MFE_3
+(RT-PBS-PolyT)"	"MFE_4
+(spacer only)"	"MFE_5
+(Spacer+Scaffold)"	DeepSpCas9 score
 CACCAACAAATGTGCCAGCCAGTCGGGCATGACCGCATATGGCACGA	xxxxxxxxxxxxxxCCAGCCAGTCGcGCATGxxxxxxxxxxxxxxxx	7	10	17	5.534783675999563	30.621055273768718	20.58270210788578	28.230403542818976	-10.038353165882938	5	7	12	71.42857142857143	70.0	70.58823529411765	-46.2	-33.7	-1.5	0.0	-24.3
 CACCAACAAATGTGCCAGCCAGTCGGGCATGACCGCATATGGCACGA	xxxxxxxxxxxxxxCCAGCCAGTCGcGCATGACxxxxxxxxxxxxxx	7	12	19	5.534783675999563	38.55364189711969	30.363315143561806	37.21921941435107	-8.190326753557883	5	8	13	71.42857142857143	66.66666666666667	68.42105263157895	-41.1	-30.0	-2.1	0.0	-24.3
 CACCAACAAATGTGCCAGCCAGTCGGGCATGACCGCATATGGCACGA	xxxxxxxxxxxxxxCCAGCCAGTCGcGCATGACCGCxxxxxxxxxxx	7	15	22	5.534783675999563	52.103087693722614	45.90673264041669	50.18909256062261	-6.196355053305922	5	11	16	71.42857142857143	73.33333333333333	72.72727272727273	-45.4	-32.3	-5.8	0.0	-24.3

@@ -19,18 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc978cbe-00bc-4bb7-9b41-d754bc1269eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/monkey_PE2_efficiency_prediction_merge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/monkey_PE2_efficiency_prediction_merge.iml" afterDir="false" />
+    <list default="true" id="fc978cbe-00bc-4bb7-9b41-d754bc1269eb" name="Default Changelist" comment="ing">
+      <change afterPath="$PROJECT_DIR$/TopMainTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1_obtainTm_MFE.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_obtainTm_MFE.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DeepCas9/DeepCas9_example_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DeepCas9/DeepCas9_example_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeepCas9/RANK_final_DeepCas9_Final.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DeepCas9/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeepCas9/Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeepPE/DeepPE_example_output.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepPE/DeepPE_example_input.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DeepPE/MainTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeepPE/MainTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogicPrep.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogicPrep.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/TopMain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Util.py" beforeDir="false" afterPath="$PROJECT_DIR$/Util.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,28 +51,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Test (1)">
-    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="monkey_PE2_efficiency_prediction_merge" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.TopMainTest (1)">
     <configuration name="MainTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="monkey_PE2_efficiency_prediction_merge" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,7 +94,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="TopMain" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="monkey_PE2_efficiency_prediction_merge" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -128,7 +106,91 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test.py" />
+      <option name="SCRIPT_NAME" value="D:\Github\monkey_PE2_efficiency_prediction_merge\TopMain.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TopMainTest (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="monkey_PE2_efficiency_prediction_merge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TopMainTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TopMainTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="monkey_PE2_efficiency_prediction_merge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\Github\monkey_PE2_efficiency_prediction_merge\TopMainTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TopMainTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="monkey_PE2_efficiency_prediction_merge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\Github\monkey_PE2_efficiency_prediction_merge\TopMainTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Util" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="monkey_PE2_efficiency_prediction_merge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Util.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,10 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TopMainTest (1)" />
+        <item itemvalue="Python.TopMainTest" />
+        <item itemvalue="Python.Util" />
+        <item itemvalue="Python.TopMainTest" />
         <item itemvalue="Python.Test (1)" />
-        <item itemvalue="Python.Test" />
-        <item itemvalue="Python.MainTest" />
-        <item itemvalue="Python.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -158,6 +221,14 @@
       <updated>1594713288499</updated>
       <workItem from="1594713292492" duration="493000" />
     </task>
+    <task id="LOCAL-00001" summary="ing">
+      <created>1595242509375</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595242509375</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +246,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ing" />
+    <option name="LAST_COMMIT_MESSAGE" value="ing" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="2245" y="348" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594713548433">
       <screen x="1982" y="-414" width="1018" height="1920" />
@@ -191,26 +266,26 @@
     <state x="547" y="391" key="FileChooserDialogImpl/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1594981561232" />
     <state x="2238" y="219" key="FileChooserDialogImpl/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595229994524" />
     <state x="2238" y="200" key="FileChooserDialogImpl/0.0.1858.1080/1920.-485.1080.1890@1920.-485.1080.1890" timestamp="1594889383328" />
-    <state width="1035" height="576" key="GridCell.Tab.0.bottom" timestamp="1595228779649">
+    <state width="1057" height="576" key="GridCell.Tab.0.bottom" timestamp="1595306378176">
       <screen x="1920" y="-465" width="1080" height="1890" />
     </state>
     <state width="1835" height="216" key="GridCell.Tab.0.bottom/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1595210069510" />
-    <state width="1035" height="576" key="GridCell.Tab.0.bottom/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595228779649" />
-    <state width="1035" height="576" key="GridCell.Tab.0.center" timestamp="1595228779649">
+    <state width="1057" height="576" key="GridCell.Tab.0.bottom/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595306378176" />
+    <state width="1057" height="576" key="GridCell.Tab.0.center" timestamp="1595306378176">
       <screen x="1920" y="-465" width="1080" height="1890" />
     </state>
     <state width="1835" height="216" key="GridCell.Tab.0.center/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1595210069510" />
-    <state width="1035" height="576" key="GridCell.Tab.0.center/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595228779649" />
-    <state width="1035" height="576" key="GridCell.Tab.0.left" timestamp="1595228779649">
+    <state width="1057" height="576" key="GridCell.Tab.0.center/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595306378176" />
+    <state width="1057" height="576" key="GridCell.Tab.0.left" timestamp="1595306378176">
       <screen x="1920" y="-465" width="1080" height="1890" />
     </state>
     <state width="1835" height="216" key="GridCell.Tab.0.left/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1595210069510" />
-    <state width="1035" height="576" key="GridCell.Tab.0.left/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595228779649" />
-    <state width="1035" height="576" key="GridCell.Tab.0.right" timestamp="1595228779649">
+    <state width="1057" height="576" key="GridCell.Tab.0.left/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595306378176" />
+    <state width="1057" height="576" key="GridCell.Tab.0.right" timestamp="1595306378176">
       <screen x="1920" y="-465" width="1080" height="1890" />
     </state>
     <state width="1835" height="216" key="GridCell.Tab.0.right/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1595210069510" />
-    <state width="1035" height="576" key="GridCell.Tab.0.right/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595228779649" />
+    <state width="1057" height="576" key="GridCell.Tab.0.right/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595306378176" />
     <state width="1035" height="687" key="GridCell.Tab.1.bottom" timestamp="1595225779923">
       <screen x="1920" y="-465" width="1080" height="1890" />
     </state>
@@ -233,20 +308,17 @@
     <state x="1991" y="187" key="SettingsEditor/0.0.1856.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1594713784459" />
     <state x="1930" y="127" key="SettingsEditor/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595209247088" />
     <state x="1930" y="107" key="SettingsEditor/0.0.1858.1080/1920.-485.1080.1890@1920.-485.1080.1890" timestamp="1594886384326" />
-    <state x="967" y="0" width="853" height="1167" key="dock-window-1" timestamp="1595208963560">
+    <state x="2051" y="212" key="Vcs.Push.Dialog.v2" timestamp="1595242520485">
+      <screen x="1920" y="-465" width="1080" height="1890" />
+    </state>
+    <state x="2051" y="212" key="Vcs.Push.Dialog.v2/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595242520485" />
+    <state x="922" y="0" width="943" height="1087" key="dock-window-1" timestamp="1595295310746">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="967" y="0" width="853" height="1167" key="dock-window-1/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595208963560" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DeepCas9/Test.py</url>
-          <line>182</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="922" y="0" width="943" height="1087" key="dock-window-1/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595295310746" />
+    <state x="-7" y="0" width="943" height="1087" key="dock-window-2" timestamp="1595295310746">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="-7" y="0" width="943" height="1087" key="dock-window-2/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595295310746" />
   </component>
 </project>

@@ -12,12 +12,13 @@ np.set_printoptions(threshold=sys.maxsize)
 
 ##############################################################################
 ## System Paths ##
-path                 = './'
+# path                 = './'
+path                 = os.getcwd() + "/DeepCas9/"
 parameters           = {'0': 'DeepCas9_example_input.txt'} # Dictionary can be expanded for multiple test parameters
 
 ## Run Parameters ##
 TEST_NUM_SET         = [0] # List can be expanded in case of multiple test parameters
-best_model_path_list = ['./DeepCas9_Final/']
+best_model_path_list = [path + '/DeepCas9_Final/']
 
 # Model
 length = 30
@@ -103,7 +104,8 @@ def Model_Finaltest(sess, TEST_X, filter_size, filter_num, if3d, model, load_epi
         Dict = {model.inputs: TEST_X[i*test_batch:(i+1)*test_batch], model.is_training: False}
         TEST_Z[i*test_batch:(i+1)*test_batch] = sess.run([model.outputs], feed_dict=Dict)[0]
 
-    OUT = open("RANK_final_{}.txt".format(best_model_path.split('/')[1]), "a")
+    # OUT = open(path + "RANK_final_{}.txt".format(best_model_path.split('/')[1]), "a")
+    OUT = open(path + "RANK_final_DeepCas9.txt", "a")
     OUT.write("Testing final \n {} ".format(tuple(TEST_Z.reshape([np.shape(TEST_Z)[0]]))))
     OUT.write("\n")
     OUT.close()
@@ -203,7 +205,7 @@ for index in range(len(best_model_list)):
         fulllist.append(value)
     #loop end: value
 
-    print(fulllist[2:])
+    # print(fulllist[2:])
 
     filter_size_1, filter_size_2, filter_size_3, filter_num_1, filter_num_2, filter_num_3, l_rate, load_episode, node_1, node_2 = fulllist[2:]
     filter_size = [filter_size_1, filter_size_2, filter_size_3]
@@ -219,16 +221,18 @@ for index in range(len(best_model_list)):
         saver = tf.train.Saver()
         saver.restore(sess, best_model_path + best_model)
 
-        OUT   = open("RANK_final_{}.txt".format(best_model_path.split('/')[1]), "a")
+        # OUT   = open(path + "RANK_final_{}.txt".format(best_model_path.split('/')[1]), "a")
+        OUT   = open(path + "RANK_final_DeepCas9.txt", "a")
         OUT.write("{}".format(best_model))
         OUT.write("\n")
         OUT.close()
 
         TEST_Y = []
         for i in range(len(TEST_NUM_SET)):
-            print ("TEST_NUM : {}".format(TEST_NUM_SET[i]))
+            # print ("TEST_NUM : {}".format(TEST_NUM_SET[i]))
 
-            OUT = open("RANK_final_{}.txt".format(best_model_path.split('/')[1]), "a")
+            # OUT = open(path + "RANK_final_{}.txt".format(best_model_path.split('/')[1]), "a")
+            OUT = open(path + "RANK_final_DeepCas9.txt", "a")
             OUT.write("\n")
             OUT.write("TEST_FILE : {}".format(parameters['{}'.format(TEST_NUM_SET[i])]))
             OUT.write("\n")
@@ -236,6 +240,7 @@ for index in range(len(best_model_list)):
             Model_Finaltest(sess, TEST_X[i], filter_size, filter_num, if3d, model, load_episode, best_model_path)
         #loop end: i
 
-        OUT = open("RANK_final_{}.txt".format(best_model_path.split('/')[1]), "a")
+        # OUT = open(path + "RANK_final_{}.txt".format(best_model_path.split('/')[1]), "a")
+        OUT = open(path + "RANK_final_DeepCas9.txt", "a")
         OUT.write("\n")
         OUT.close()

@@ -10,12 +10,13 @@ from random import shuffle
 
 ##############################################################################
 ## System Paths ##
-path                 = './'
+# path                 = './'
+path                 = os.getcwd() + "/DeepPE/"
 parameters           = {'0': 'DeepPE_example_input.txt'} # Dictionary can be expanded for multiple test parameters
 
 ## Run Parameters ##
 TEST_NUM_SET         = [0] # List can be expanded in case of multiple test parameters
-best_model_path_list = ['./DeepPE_weight']
+best_model_path_list = [path + '/DeepPE_weight']
 
 length = 47
 
@@ -110,7 +111,7 @@ def preprocess_seq(data):
     global length
 
     DATA_X = np.zeros((len(data),1,length,4), dtype=int)
-    print(np.shape(data), len(data), length)
+    # print(np.shape(data), len(data), length)
     for l in range(len(data)):
         for i in range(length):
 
@@ -169,7 +170,7 @@ os.environ['CUDA_VISIBLE_DEVICES']  = '0'
 best_model_cv                       = 0.0
 best_model_list                     = []
 
-testbook = xlsxwriter.Workbook('DeepPE_example_output.xlsx')
+testbook = xlsxwriter.Workbook(path + 'DeepPE_example_output.xlsx')
 
 TEST_X = []
 TEST_mod_X = []
@@ -213,7 +214,7 @@ for index in range(len(best_model_list)):
             except: pass
         fulllist.append(value)
 
-    print(fulllist[2:])
+    # print(fulllist[2:])
 
     filter_size_1, filter_size_2, filter_size_3, filter_num_1, filter_num_2, filter_num_3, l_rate, load_episode, node_1 = fulllist[2:]
     filter_size = [filter_size_1, filter_size_2, filter_size_3]
