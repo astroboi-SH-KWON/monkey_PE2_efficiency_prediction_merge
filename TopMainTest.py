@@ -1,23 +1,33 @@
 import time
 import os
+import numpy as np
+import shutil
 
 
 import Util
 import LogicPrep
 ############### start to set env ###############
 WORK_DIR = os.getcwd() + "/"
+P_NAME = WORK_DIR[:-1].split("/")[-1]
 INPUT_DIR = "input/crab_eating_deep_pe_input/"
 # INPUT_DIR = "input/marmoset_deep_pe_input/"
 OUTPUT = "output/"
 TOP_N = 1000
 ############### end setting env ################
 
+
 def test():
     util = Util.Utils()
     logic_preps = LogicPrep.LogicPreps()
     total_list = []
     tmp_total_list = []
-    Tm_MFE_input_list = util.read_file_wo_header_by_delimiter(WORK_DIR + INPUT_DIR + "deep_pe_input_chr_NTIC01034945.1.csv")
+    # test file with 2673 rows, 7 hours
+    # Tm_MFE_input_list = util.read_file_wo_header_by_delimiter(WORK_DIR + INPUT_DIR + "deep_pe_input_chr_NTIC01034945.1.csv")
+    # 800 rows
+    Tm_MFE_input_list = util.read_file_wo_header_by_delimiter(WORK_DIR + INPUT_DIR + "deep_pe_input_chr_NTIC01000447.1.csv")
+    # test file with 13 rows
+    # Tm_MFE_input_list = util.read_file_wo_header_by_delimiter(WORK_DIR + INPUT_DIR + "deep_pe_input_chr_NTIC01023672.1.csv")
+    # Tm_MFE_input_list = util.read_file_wo_header_by_delimiter(WORK_DIR + INPUT_DIR + "deep_pe_input_chr_NTIC01035998.1.csv")
     filtered_Tm_MFE_input_list = logic_preps.del_ele_in_list(Tm_MFE_input_list, [''])
 
     for tmp_arr in filtered_Tm_MFE_input_list:
@@ -37,7 +47,7 @@ def test():
         except Exception as err:
             print("os.remove('out_1_obtainTm_MFE/formodeling.output.pt1.csv') : ", err)
         # # 1-4. make new result
-        os.system('./1_obtainTm_MFE.py')
+        os.system('python ./1_obtainTm_MFE.py')
         # 1. end 1_obtainTm_MFE.py
 
         # 2. start DeepCas9
@@ -94,8 +104,12 @@ def test():
         total_list = sorted_total_list[:TOP_N]
         # 4. end add data to total_list
 
-    util.make_top_N_total_list('total_result.txt', total_list)
-    util.make_top_N_total_list('tmp_total_result.txt', tmp_total_list)
+    try:
+        os.remove('total_result_' + P_NAME + '.txt')
+    except Exception as err:
+        print("os.remove('total_result_" + P_NAME + ".txt') : ", err)
+    util.make_top_N_total_list('total_result_' + P_NAME + '.txt', total_list)
+    util.make_top_N_total_list('tmp_total_result_' + P_NAME + '.txt', tmp_total_list)
 
 
 
@@ -134,6 +148,33 @@ def read_file():
             tmp_list.append(tmp_line)
     print(tmp_list)
 
+def make_excel_to_csv():
+    util = Util.Utils()
+    sources_excel = util.get_files_from_dir(WORK_DIR + INPUT_DIR + "*.xlsx")
+    for excel_fn in sources_excel:
+        util.make_excel_to_csv(excel_fn, "xlsx")
+
+def divide_files_by_dir():
+    split_num = 15
+    util = Util.Utils()
+    csv_sources = util.get_files_from_dir(WORK_DIR + INPUT_DIR + '*.csv')
+    splited_csv_sources = np.array_split(csv_sources, split_num)
+
+    cnt = 1
+    for csv_arr in splited_csv_sources:
+        dir_name = WORK_DIR + INPUT_DIR + "P" + str(cnt) + "/"
+        os.makedirs(dir_name, exist_ok=True)
+        for csv_file in csv_arr:
+            # csv_file = str(tmp_csv_file)
+            file_nm = csv_file.split("\\")[3]
+            # print(csv_file)
+            # print(file_nm)
+            shutil.copy(csv_file, dir_name + file_nm)
+
+
+        cnt += 1
+
+
 
 
 
@@ -141,8 +182,10 @@ def read_file():
 
 if __name__ == '__main__':
     start_time = time.perf_counter()
-    print("start >>>>>>>>>>>>>>>>>>")
+    print("start [" + P_NAME + "]>>>>>>>>>>>>>>>>>>")
     test()
     # local_test()
     # read_file()
+    # make_excel_to_csv()
+    # divide_files_by_dir()
     print("::::::::::: %.2f seconds ::::::::::::::" % (time.perf_counter() - start_time))

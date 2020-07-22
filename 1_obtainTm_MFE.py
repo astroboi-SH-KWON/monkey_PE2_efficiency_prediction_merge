@@ -1,5 +1,3 @@
-#!/home/hkim/anaconda2/envs/tf_1/bin/python
-
 import os, sys, pickle, time, subprocess, json, re, regex, random
 from Bio.SeqUtils import MeltingTemp as mt
 from Bio.SeqUtils import GC as gc

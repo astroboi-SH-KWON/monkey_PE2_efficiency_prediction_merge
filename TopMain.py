@@ -6,6 +6,7 @@ import Util
 import LogicPrep
 ############### start to set env ###############
 WORK_DIR = os.getcwd() + "/"
+P_NAME = WORK_DIR[:-1].split("/")[-1]
 INPUT_DIR = "input/crab_eating_deep_pe_input/"
 # INPUT_DIR = "input/marmoset_deep_pe_input/"
 OUTPUT = "output/"
@@ -16,7 +17,7 @@ def main():
     util = Util.Utils()
     logic_preps = LogicPrep.LogicPreps()
     total_list = []
-    csv_sources = util.get_files_from_dir(WORK_DIR + INPUT_DIR + '*.csv')
+    csv_sources = util.get_files_from_dir(WORK_DIR + INPUT_DIR + P_NAME + '/*.csv')
 
     for chr_file_path in csv_sources:
         Tm_MFE_input_list = util.read_file_wo_header_by_delimiter(chr_file_path)
@@ -39,7 +40,7 @@ def main():
             except Exception as err:
                 print("os.remove('out_1_obtainTm_MFE/formodeling.output.pt1.csv') : ", err)
             # # 1-4. make new result
-            os.system('./1_obtainTm_MFE.py')
+            os.system('python ./1_obtainTm_MFE.py')
             # 1. end 1_obtainTm_MFE.py
 
             # 2. start DeepCas9
@@ -90,25 +91,19 @@ def main():
             result_list = util.read_file_by_delimiter('DeepPE/DeepPE_example_output.csv')
             filtered_result_list = logic_preps.del_ele_in_list(result_list, [''])
             total_list.extend(filtered_result_list)
+            # TODO filter out duple elements
             sorted_total_list = logic_preps.sort_list_by_ele(total_list, -1)
             total_list = sorted_total_list[:TOP_N]
             # 4. end add data to total_list
 
-    util.make_top_N_total_list('total_result.txt', total_list)
-
-
-def make_excel_to_csv():
-    util = Util.Utils()
-    sources_excel = util.get_files_from_dir(WORK_DIR + INPUT_DIR + "*.xlsx")
-    for excel_fn in sources_excel:
-        util.make_excel_to_csv(excel_fn, "xlsx")
-
-
-
+    try:
+        os.remove('total_result_' + P_NAME + '.txt')
+    except Exception as err:
+        print("os.remove('total_result_" + P_NAME + ".txt') : ", err)
+    util.make_top_N_total_list('total_result_' + P_NAME + '.txt', total_list)
 
 if __name__ == '__main__':
     start_time = time.perf_counter()
-    print("start >>>>>>>>>>>>>>>>>>")
+    print("start [" + P_NAME + "]>>>>>>>>>>>>>>>>>>")
     main()
-    # make_excel_to_csv()
     print("::::::::::: %.2f seconds ::::::::::::::" % (time.perf_counter() - start_time))
