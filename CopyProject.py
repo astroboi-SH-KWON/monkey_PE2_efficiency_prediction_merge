@@ -11,7 +11,7 @@ def copy_project():
         try:
             os.remove(p_name)
         except Exception as err:
-            print("os.remove('total_result_" + p_name + ") : ", err)
+            print("os.remove(" + p_name + ") : ", err)
         os.makedirs(p_name, exist_ok=True)
         os.system('cp -R ./P1/* ./{}'.format(p_name))
 
