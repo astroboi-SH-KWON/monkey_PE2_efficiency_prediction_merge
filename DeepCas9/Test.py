@@ -13,11 +13,11 @@ np.set_printoptions(threshold=sys.maxsize)
 ##############################################################################
 ## System Paths ##
 # path                 = './'
-path                 = os.getcwd() + "/DeepCas9/"
-parameters           = {'0': 'DeepCas9_example_input.txt'} # Dictionary can be expanded for multiple test parameters
+path                 = os.getcwd() + "/"  # + "DeepCas9/"  # TODO
+parameters           = {'0': 'DeepCas9_example_input.txt'}  # Dictionary can be expanded for multiple test parameters
 
 ## Run Parameters ##
-TEST_NUM_SET         = [0] # List can be expanded in case of multiple test parameters
+TEST_NUM_SET         = [0]  # List can be expanded in case of multiple test parameters
 best_model_path_list = [path + '/DeepCas9_Final/']
 
 # Model

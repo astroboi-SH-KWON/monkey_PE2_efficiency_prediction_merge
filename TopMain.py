@@ -1,7 +1,6 @@
 import time
 import os
 
-
 import Util
 import LogicPrep
 ############### start to set env ###############
@@ -11,6 +10,7 @@ INPUT_DIR = "input/crab_eating_deep_pe_input/"
 # INPUT_DIR = "input/marmoset_deep_pe_input/"
 OUTPUT = "output/"
 TOP_N = 1000
+BATCH_SIZE = 1000
 ############### end setting env ################
 
 def main():
@@ -19,11 +19,17 @@ def main():
     total_list = []
     csv_sources = util.get_files_from_dir(WORK_DIR + INPUT_DIR + P_NAME + '/*.csv')
 
+
+
     for chr_file_path in csv_sources:
         Tm_MFE_input_list = util.read_file_wo_header_by_delimiter(chr_file_path)
         filtered_Tm_MFE_input_list = logic_preps.del_ele_in_list(Tm_MFE_input_list, [''])
 
-        for tmp_arr in filtered_Tm_MFE_input_list:
+        Tm_MFE_input_chunks = [filtered_Tm_MFE_input_list[x:x + BATCH_SIZE] for x in
+                               range(0, len(filtered_Tm_MFE_input_list), BATCH_SIZE)]
+
+        for Tm_MFE_input_arr in Tm_MFE_input_chunks:
+        # for tmp_arr in filtered_Tm_MFE_input_list:  # one by one
             # 1. start 1_obtainTm_MFE.py
             # # 1-1. del old input file
             try:
@@ -31,7 +37,8 @@ def main():
             except Exception as err:
                 print("os.remove('Tm_MFE_example.txt') : ", err)
             # # 1-2. make new input file
-            util.make_1_obtainTm_MFE_input([tmp_arr])
+            util.make_1_obtainTm_MFE_input(Tm_MFE_input_arr)
+            # util.make_1_obtainTm_MFE_input([tmp_arr])  # one by one
             # # 1-3. del old result
             try:
                 os.remove('out_1_obtainTm_MFE/formodeling.output.pt1.csv')
@@ -103,7 +110,7 @@ def main():
     util.make_top_N_total_list('total_result_' + P_NAME + '.txt', total_list)
 
 if __name__ == '__main__':
-    start_time = time.perf_counter()
+    start_time = time.time()
     print("start [" + P_NAME + "]>>>>>>>>>>>>>>>>>>")
     main()
-    print("::::::::::: %.2f seconds ::::::::::::::" % (time.perf_counter() - start_time))
+    print("::::::::::: %.2f seconds ::::::::::::::" % (time.time() - start_time))

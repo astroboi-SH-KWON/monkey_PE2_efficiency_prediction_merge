@@ -20,13 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc978cbe-00bc-4bb7-9b41-d754bc1269eb" name="Default Changelist" comment="ing">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/monkey_PE2_efficiency_prediction_merge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/monkey_PE2_efficiency_prediction_merge.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CopyProject.py" beforeDir="false" afterPath="$PROJECT_DIR$/CopyProject.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LogicPrep.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogicPrep.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepCas9/DeepCas9_example_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DeepCas9/DeepCas9_example_input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepCas9/RANK_final_DeepCas9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepCas9/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeepCas9/Test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TopMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/TopMain.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TopMainTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/TopMainTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Util.py" beforeDir="false" afterPath="$PROJECT_DIR$/Util.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +49,34 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.TopMain (1)">
+  <component name="RunManager" selected="Python.Test">
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="monkey_PE2_efficiency_prediction_merge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DeepCas9" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DeepCas9/Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="TopMain (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="monkey_PE2_efficiency_prediction_merge" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -68,27 +90,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TopMain.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TopMain" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="monkey_PE2_efficiency_prediction_merge" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\Github\monkey_PE2_efficiency_prediction_merge\TopMain.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.TopMain (1)" />
+        <item itemvalue="Python.Test" />
         <item itemvalue="Python.TopMainTest (1)" />
+        <item itemvalue="Python.TopMain (1)" />
         <item itemvalue="Python.TopMainTest" />
         <item itemvalue="Python.Util" />
-        <item itemvalue="Python.TopMainTest" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595399891496</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ing">
+      <created>1595467389226</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595467389226</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,32 +264,32 @@
     </state>
     <state x="463" y="394" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1595209910943" />
     <state x="2189" y="225" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595209335611" />
-    <state x="2238" y="219" key="FileChooserDialogImpl" timestamp="1595401433233">
+    <state x="2238" y="219" key="FileChooserDialogImpl" timestamp="1595476559235">
       <screen x="1920" y="-465" width="1080" height="1890" />
     </state>
     <state x="547" y="391" key="FileChooserDialogImpl/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1594981561232" />
-    <state x="2238" y="219" key="FileChooserDialogImpl/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595401433233" />
+    <state x="2238" y="219" key="FileChooserDialogImpl/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595476559235" />
     <state x="2238" y="200" key="FileChooserDialogImpl/0.0.1858.1080/1920.-485.1080.1890@1920.-485.1080.1890" timestamp="1594889383328" />
-    <state width="1057" height="576" key="GridCell.Tab.0.bottom" timestamp="1595465452020">
-      <screen x="1920" y="-465" width="1080" height="1890" />
+    <state width="903" height="294" key="GridCell.Tab.0.bottom" timestamp="1595482354119">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1835" height="216" key="GridCell.Tab.0.bottom/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1595210069510" />
-    <state width="1057" height="576" key="GridCell.Tab.0.bottom/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595465452020" />
-    <state width="1057" height="576" key="GridCell.Tab.0.center" timestamp="1595465452020">
-      <screen x="1920" y="-465" width="1080" height="1890" />
+    <state width="903" height="294" key="GridCell.Tab.0.bottom/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1595482354119" />
+    <state width="1057" height="576" key="GridCell.Tab.0.bottom/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595479229208" />
+    <state width="903" height="294" key="GridCell.Tab.0.center" timestamp="1595482354119">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1835" height="216" key="GridCell.Tab.0.center/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1595210069510" />
-    <state width="1057" height="576" key="GridCell.Tab.0.center/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595465452020" />
-    <state width="1057" height="576" key="GridCell.Tab.0.left" timestamp="1595465452020">
-      <screen x="1920" y="-465" width="1080" height="1890" />
+    <state width="903" height="294" key="GridCell.Tab.0.center/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1595482354119" />
+    <state width="1057" height="576" key="GridCell.Tab.0.center/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595479229208" />
+    <state width="903" height="294" key="GridCell.Tab.0.left" timestamp="1595482354119">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1835" height="216" key="GridCell.Tab.0.left/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1595210069510" />
-    <state width="1057" height="576" key="GridCell.Tab.0.left/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595465452020" />
-    <state width="1057" height="576" key="GridCell.Tab.0.right" timestamp="1595465452020">
-      <screen x="1920" y="-465" width="1080" height="1890" />
+    <state width="903" height="294" key="GridCell.Tab.0.left/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1595482354119" />
+    <state width="1057" height="576" key="GridCell.Tab.0.left/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595479229208" />
+    <state width="903" height="294" key="GridCell.Tab.0.right" timestamp="1595482354119">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1835" height="216" key="GridCell.Tab.0.right/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1595210069510" />
-    <state width="1057" height="576" key="GridCell.Tab.0.right/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595465452020" />
+    <state width="903" height="294" key="GridCell.Tab.0.right/0.0.1858.1080/1920.-465.1080.1890@0.0.1858.1080" timestamp="1595482354119" />
+    <state width="1057" height="576" key="GridCell.Tab.0.right/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595479229208" />
     <state width="1035" height="687" key="GridCell.Tab.1.bottom" timestamp="1595225779923">
       <screen x="1920" y="-465" width="1080" height="1890" />
     </state>
@@ -304,10 +312,10 @@
     <state x="1991" y="187" key="SettingsEditor/0.0.1856.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1594713784459" />
     <state x="1930" y="127" key="SettingsEditor/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595401446218" />
     <state x="1930" y="107" key="SettingsEditor/0.0.1858.1080/1920.-485.1080.1890@1920.-485.1080.1890" timestamp="1594886384326" />
-    <state x="2051" y="212" key="Vcs.Push.Dialog.v2" timestamp="1595399907281">
+    <state x="2051" y="212" key="Vcs.Push.Dialog.v2" timestamp="1595467400340">
       <screen x="1920" y="-465" width="1080" height="1890" />
     </state>
-    <state x="2051" y="212" key="Vcs.Push.Dialog.v2/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595399907281" />
+    <state x="2051" y="212" key="Vcs.Push.Dialog.v2/0.0.1858.1080/1920.-465.1080.1890@1920.-465.1080.1890" timestamp="1595467400340" />
     <state x="1006" y="0" width="868" height="1167" key="dock-window-1" timestamp="1595465568341">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>

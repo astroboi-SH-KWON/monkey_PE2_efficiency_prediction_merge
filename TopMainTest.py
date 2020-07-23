@@ -148,15 +148,13 @@ def local_test():
 
 
 def read_file():
-    tmp_list = []
-    with open("D:/000_WORK/KimHuiKwon/20200714/recieved_files/20200714/Supplemetary Code 1. DeepPE/DeepPE code/DeepPE_example_input.txt", "r") as f:
 
-        while True:
-            tmp_line = f.readline()
-            if tmp_line == '':
-                break
-            tmp_list.append(tmp_line)
-    print(tmp_list)
+    for idx in range(17, 25):
+        print(idx)
+    # util = Util.Utils()
+    # tmp_val = util.read_cas9_val("D:/000_WORK\KimHuiKwon/20200714/WORK_DIR/out/RANK_final_DeepCas9.txt")
+    # print(tmp_val)
+
 
 def make_excel_to_csv():
     util = Util.Utils()
@@ -191,11 +189,11 @@ def divide_files_by_dir():
 
 
 if __name__ == '__main__':
-    start_time = time.perf_counter()
+    start_time = time.time()
     print("start [" + P_NAME + "]>>>>>>>>>>>>>>>>>>")
     test()
     # local_test()
     # read_file()
     # make_excel_to_csv()
     # divide_files_by_dir()
-    print("::::::::::: %.2f seconds ::::::::::::::" % (time.perf_counter() - start_time))
+    print("::::::::::: %.2f seconds ::::::::::::::" % (time.time() - start_time))

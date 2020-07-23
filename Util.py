@@ -74,15 +74,13 @@ class Utils:
                 f.writelines(tmp_str[:-1] + "\n")
 
     def read_cas9_val(self, path):
-        cas9_val = .0
         with open(path, "r") as f:
             f.readline()
             f.readline()
             f.readline()
             f.readline()
-            tmp = f.readline().replace("\n", "").strip().split(",")
-            cas9_val += float(tmp[1])
-        return cas9_val
+            return f.readline().replace("\n", "").replace("(", "").replace(")", "").strip().split(",")
+
 
     def make_DeepPE_input(self, work_dir, file_list):
         deep_cas9_input = file_list[0]
@@ -90,14 +88,14 @@ class Utils:
         deep_PE_input = file_list[2]
 
         deep_cas9_input_list = self.read_file_by_delimiter(work_dir + deep_cas9_input, '\t')
-        cas9_val = self.read_cas9_val(work_dir + deep_cas9_output)
+        cas9_val_list = self.read_cas9_val(work_dir + deep_cas9_output)
 
         with open(work_dir + deep_PE_input, "a") as f:
             f.writelines('Wide target sequence (47)\tPrime edited sequence\tPBS length\tRT length\tPBS-RT length\t"Tm1\n(PBS)"\t"Tm 2\n(target DNA region corresponding to RT template)"\t"Tm 3\n(reverse transcribed cDNA and PAM-opposite DNA strand)"\t"Tm 4\n(RT template region and reverse transcribed cDNA)"\t"deltaTm\n(Tm3-Tm2)"\t"GC count_1\n(PBS)"\t"GC count_2\n(RT)"\t"GC count_3\n(PBS-RT)"\t"GC contents_1\n(PBS)"\t"GC contents_2\n(RT)"\t"GC contents_3\n(PBS-RT)"\t"MFE_1\n(pegRNA)"\t"MFE_2\n(-spacer)"\t"MFE_3\n(RT-PBS-PolyT)"\t"MFE_4\n(spacer only)"\t"MFE_5\n(Spacer+Scaffold)"\tDeepSpCas9 score\n')
             for idx in range(17, len(deep_cas9_input_list)):
                 for tmp_arr in deep_cas9_input_list[idx]:
                     f.writelines(tmp_arr + "\t")
-                f.writelines(str(cas9_val) + "\n")
+                f.writelines(str(cas9_val_list[idx - 17]) + "\n")
 
     def make_top_N_total_list(self, path, data_list):
         with open(path, "a") as f:
