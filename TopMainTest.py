@@ -25,7 +25,8 @@ def test():
     # test file with 2673 rows, 7 hours
     # Tm_MFE_input_list = util.read_file_wo_header_by_delimiter(WORK_DIR + INPUT_DIR + "deep_pe_input_chr_NTIC01034945.1.csv")
     # 800 rows
-    Tm_MFE_input_list = util.read_file_wo_header_by_delimiter(WORK_DIR + INPUT_DIR + "deep_pe_input_chr_NTIC01000447.1.csv")
+    # Tm_MFE_input_list = util.read_file_wo_header_by_delimiter(WORK_DIR + INPUT_DIR + "deep_pe_input_chr_NTIC01000447.1.csv")
+    Tm_MFE_input_list = util.read_file_wo_header_by_delimiter(WORK_DIR + INPUT_DIR + "mouse_seq_sorted_by_CAS9_top_100_final_top_2000.csv")
     # test file with 13 rows
     # Tm_MFE_input_list = util.read_file_wo_header_by_delimiter(WORK_DIR + INPUT_DIR + "deep_pe_input_chr_NTIC01023672.1.csv")
     # Tm_MFE_input_list = util.read_file_wo_header_by_delimiter(WORK_DIR + INPUT_DIR + "deep_pe_input_chr_NTIC01035998.1.csv")
@@ -105,8 +106,8 @@ def test():
         filtered_result_list = logic_preps.del_ele_in_list(result_list, [''])
         total_list.extend(filtered_result_list)
         tmp_total_list.extend(filtered_result_list)
-        sorted_total_list = logic_preps.sort_list_by_ele(total_list, -1)
-        tmp_total_list = logic_preps.sort_list_by_ele(tmp_total_list, -1)
+        sorted_total_list = logic_preps.sort_list_by_float_ele(total_list, -1)
+        tmp_total_list = logic_preps.sort_list_by_float_ele(tmp_total_list, -1)
         total_list = sorted_total_list[:TOP_N]
         # 4. end add data to total_list
 
@@ -140,7 +141,7 @@ def local_test():
         print(tmp_arr)
 
     print(":::::::::::::::::::")
-    sorted_result_list = logic_preps.sort_list_by_ele(filtered_result_list, -1)
+    sorted_result_list = logic_preps.sort_list_by_float_ele(filtered_result_list, -1)
     util.make_top_N_total_list('total_result.txt', sorted_result_list)
 
     for tmp_arr in sorted_result_list:

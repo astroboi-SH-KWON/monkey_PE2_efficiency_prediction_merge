@@ -99,7 +99,7 @@ def main():
             filtered_result_list = logic_preps.del_ele_in_list(result_list, [''])
             total_list.extend(filtered_result_list)
             # TODO filter out duple elements
-            sorted_total_list = logic_preps.sort_list_by_ele(total_list, -1)
+            sorted_total_list = logic_preps.sort_list_by_float_ele(total_list, -1)
             total_list = sorted_total_list[:TOP_N]
             # 4. end add data to total_list
 
